@@ -32,7 +32,7 @@ main {
 .default-stuff-container {
   display: grid;
   grid-template-columns: 2fr 2fr;
-  width: 900px;
+  width: 800px;
 }
 
 .info-container {
@@ -60,7 +60,7 @@ li {
 
 .input-labels {
   display: flex;
-  margin-top: 2rem;
+  margin-top: 3rem;
   justify-content: space-between;
 }
 
@@ -121,7 +121,7 @@ span {
   font-weight: 700;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 800px) {
   body {
     background-color: var(--white);
 
@@ -141,15 +141,15 @@ span {
 
   .img-container {
     background-image: url("/assets/images/illustration-sign-up-mobile.svg");
-    background-size: cover;
-    background-position: center;
+    background-size: 100%;
+    background-position: center top;
+    height: 330px;
     background-repeat: no-repeat;
     border-radius: 0 0 0.7rem 0.7rem;
-    height: 300px;
   }
 
   .info-container {
-    padding: 2rem 2.8rem 4rem 2.8rem;
+    padding: 4rem 2.8rem 4rem 1.8rem;
   }
 
   li {
