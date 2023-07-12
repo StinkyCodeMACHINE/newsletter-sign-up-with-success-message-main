@@ -73,7 +73,6 @@ function App() {
           <div className="img-container">
 
           </div>
-          {/* <img src="/assets/images/illustration-sign-up-desktop.svg" /> */}
         </div>
       ) : (
         <div className="subbed-stuff-container">
