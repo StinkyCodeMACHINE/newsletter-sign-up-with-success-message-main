@@ -1,0 +1,175 @@
+:root {
+  --tomato: hsl(4, 100%, 67%);
+  --tomato-tp: hsla(4, 100%, 67%, 0.1);
+  --dark-slate-grey: hsl(234, 29%, 20%);
+  --charcoal-grey: hsl(235, 18%, 26%);
+  --grey: hsl(231, 7%, 60%);
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background-color: var(--charcoal-grey);
+}
+
+main {
+  background-color: var(--white);
+  padding: 1rem;
+  border-radius: 1.3rem;
+  padding: 1rem;
+}
+
+.default-stuff-container {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  width: 900px;
+}
+
+.info-container {
+  padding: 2rem 2.8rem 4rem 1.8rem;
+}
+
+p {
+  margin: 1rem 0;
+  color: var(--charcoal-grey);
+}
+h1 {
+  font-size: 3.4rem;
+  font-weight: 700;
+  color: var(--dark-slate-grey);
+}
+li {
+  background-image: url("/assets/images/icon-list.svg");
+  background-repeat: no-repeat;
+  padding-left: 2rem;
+  margin-bottom: 0.5rem;
+  background-size: contain;
+  list-style-type: none;
+  color: var(--charcoal-grey);
+}
+
+.input-labels {
+  display: flex;
+  margin-top: 2rem;
+  justify-content: space-between;
+}
+
+h2 {
+  color: var(--dark-slate-grey);
+  font-size: 0.8rem;
+}
+
+input {
+  display: block;
+  width: 100%;
+  border-radius: 0.5rem;
+  margin: 0.5rem 0 1rem 0;
+  padding: 1rem;
+  border: 1px solid var(--grey);
+  cursor: pointer;
+  color: var(--dark-slate-grey);
+}
+
+input:focus {
+  border: 1px solid var(--dark-slate-grey);
+}
+
+button {
+  display: block;
+  width: 100%;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  border: 1px solid var(--grey);
+  color: var(--white);
+  background: var(--dark-slate-grey);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button:hover {
+  background: linear-gradient(90deg, #ff5379, #fe693f);
+}
+
+.img-container {
+  background-image: url("/assets/images/illustration-sign-up-desktop.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 0.7rem;
+}
+
+.subbed-stuff-container {
+  width: 400px;
+  padding-top: 3rem;
+  background-image: url("/assets/images/icon-success.svg");
+  background-repeat: no-repeat;
+  background-size: 55px;
+  background-position: 20px 20px;
+}
+
+span {
+  font-weight: 700;
+}
+
+@media (max-width: 900px) {
+  body {
+    background-color: var(--white);
+
+    display: block;
+  }
+
+  main {
+    border-radius: 0;
+    padding: 0;
+  }
+
+  .default-stuff-container {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+
+  .img-container {
+    background-image: url("/assets/images/illustration-sign-up-mobile.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 0 0 0.7rem 0.7rem;
+    height: 300px;
+  }
+
+  .info-container {
+    padding: 2rem 2.8rem 4rem 2.8rem;
+  }
+
+  li {
+    background-size: 19px 19px;
+  }
+
+  .subbed-stuff-container {
+    width: 100%;
+    padding-top: 8rem;
+    background-image: url("/assets/images/icon-success.svg");
+    background-repeat: no-repeat;
+    background-size: 55px;
+    background-position: 40px 90px;
+  }
+
+  .subbed-stuff-container h1 {
+    font-size: 2.5rem;
+  }
+
+  .subbed-stuff-container button {
+    margin-top: 17rem;
+  }
+}
